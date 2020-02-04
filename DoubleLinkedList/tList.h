@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 // Templated doubly-linked list
 template<typename T>
 class tList
@@ -149,6 +150,7 @@ inline void tList<T>::pop_back()
 	}
 }
 
+
 template<typename T>
 inline T & tList<T>::front()
 {
@@ -256,7 +258,6 @@ template<typename T>
 inline size_t tList<T>::currentSize()
 {
 	iterator endOfList = iterator(this->tail);
-	//endOfList--;
 
 	iterator beginingOfList =  begin();
 	size_t size = 0;
